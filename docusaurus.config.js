@@ -34,17 +34,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/Davuttrg/site-spica',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/Davuttrg/site-spica',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -60,7 +49,7 @@ const config = {
         // title: 'Spica Engine',
         logo: {
           alt: 'Spica Logo',
-          src: 'img/logo.jpeg',
+          src: 'img/small_logo.svg',
         },
         items: [
           {
@@ -69,9 +58,8 @@ const config = {
             position: 'left',
             label: 'Guide',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/spica-engine/spica',
             label: 'GitHub',
             position: 'right',
           },
@@ -132,19 +120,6 @@ const config = {
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/spicaengine',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/spica-engine/spica',
               },
             ],
           },

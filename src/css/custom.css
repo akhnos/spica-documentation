@@ -15,6 +15,7 @@
   --ifm-color-primary-lighter: #20205c;
   --ifm-color-primary-lightest: #242468;
   --ifm-navbar-link-hover-color: #15bde8;
+  --ifm-footer-logo-max-width: min(10rem, 65vw);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -42,4 +43,8 @@ body {
 .table-of-contents__link--active code {
   color: var(--ifm-color-primary);
   color: #15bde8;
+}
+
+.menu__link--sublist-caret:after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.4rem 1.4rem;
 }
