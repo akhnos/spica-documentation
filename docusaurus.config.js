@@ -7,12 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Spica',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://spicaengine.com/',
+  tagline: 'Spica are cool',
+  url: 'http://localhost:3000/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -34,7 +35,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/', // Set this value to '/'.
         },
+        blog:false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -103,7 +106,7 @@ const config = {
                 label: 'Pricing',
                 to: '/pricing',
               },
-              
+
             ],
           },
           {

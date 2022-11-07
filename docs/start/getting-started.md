@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # Getting Started
 
 <!-- ## Table of contents -->
