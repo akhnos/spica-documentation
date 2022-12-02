@@ -8,7 +8,7 @@ Some applications have a user login system, some have not. This is why users are
 
 ## Rules
 
-Rules will be applied to every identity. This means rules don't give access to your administration account if rule conditions return false. Instead of adding every identity to rule separately, it will be easier to add a custom policy to your administration accounts and checking if the authenticated user has your custom policy.
+Rules will be applied to every identity. This means rules don't give access to your administration account if rule conditions return false. Instead of adding every identity to rulxe separately, it will be easier to add a custom policy to your administration accounts and checking if the authenticated user has your custom policy.
 
 Bad
 

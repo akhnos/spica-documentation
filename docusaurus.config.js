@@ -56,12 +56,6 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'start/getting-started',
-            position: 'left',
-            label: 'Guide',
-          },
-          {
             href: 'https://github.com/spica-engine/spica',
             label: 'GitHub',
             position: 'right',
@@ -99,12 +93,8 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Docs',
-                to: '/docs/start/getting-started',
-              },
-              {
                 label: 'Pricing',
-                to: '/pricing',
+                to: 'https://spicaengine.com/pricing',
               },
 
             ],

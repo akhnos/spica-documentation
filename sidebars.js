@@ -31,6 +31,11 @@ const sidebars = {
     },
     {
       type: "category",
+      label: 'Guide',
+      items: ['guide/contributing','guide/introduction','guide/open-source-build','guide/user-register-login'],
+    },
+    {
+      type: "category",
       label: 'Additionals',
       items: ['additionals/bucket-module-types','additionals/query-params','additionals/access-control-rules'],
     },
