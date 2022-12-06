@@ -73,7 +73,7 @@ export default function(req, res) {
 
   
   // Storage.insert(<STORAGE OBJECT>,(progress)=>{});
-  return Storage.insert(storageObjects, (data) => {
+  return Storage.insert(storageObjects, (progress) => {
     const loadedPercentage = (progress.loaded / progress.total) * 100;
     console.log(`Upload progress: %${loadedPercentage}`);  });
   });
@@ -91,7 +91,7 @@ export default function(req, res) {
   let storageObjects = [<FIRST BUFFER OBJECT>,<SECOND BUFFER OBJECT>,<THIRD BUFFER OBJECT>];
   
   // Storage.insert(<STORAGE OBJECT>,(progress)=>{});
-  return Storage.insertMany(storageObjects, (data) => {
+  return Storage.insertMany(storageObjects, (progress) => {
     const loadedPercentage = (progress.loaded / progress.total) * 100;
     console.log(`Upload progress: %${loadedPercentage}`);  });
   });
