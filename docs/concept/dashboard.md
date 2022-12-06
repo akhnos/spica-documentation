@@ -1,10 +1,10 @@
 # Dashboard
 
-## Table of contents
-
 The dashboard module allows you to create a new custom dashboard including custom data charts or tables.
 
-To list all of your Dashboards, simply open the **Primary** section of the side panel and click on the **list** icon.
+To list all of your Dashboards, simply open the **Dashboard** section of the side panel.
+
+## Table of contents
 
 ## Creating a new custom Dashboard
 
@@ -12,7 +12,19 @@ A basic custom dashboard consists of two properties; a name and components. You 
 
 URL property of the component dedicates where the chart data comes from. You can choose to get data directly from Spica by using an HTTP Triggered function, or you can enter a remote URL.
 
-Please note, each component accepts takes a different kind of JSON structure.
+Please note, each component accepts a different kind of JSON structure.
+
+## Properties
+
+Essentialy, dashboard requires two properties; `label` and `datasets`.
+- `title`: The title shown at the top of the chart.
+- `options`: Options for the chart such as.
+- `label`: The y-axis of the chart. Takes an array.
+- `datasets`: The x-axis of the chart. Takes an array or multiple arrays.
+- `legend`: Display the legend or not.
+- `width`: Width of the chart.
+- `filters`: Optional filters for filtering the chart. 
+
 ### Example Line Data Response
 
 ```json
@@ -254,4 +266,3 @@ Also, you can add file input to the card like the following:
 }
 ```
 
-To see your custom dashboards, please navigate to the **Primary** section on the menu.

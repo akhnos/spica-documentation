@@ -1,5 +1,7 @@
 # Installation
 
+## CLI
+
 Spica provides CLI to manage your instances on your local machine.
 
 1. To install CLI, simply enter the following command to your terminal:
@@ -17,3 +19,29 @@ $ spica project start <instance name>
 > Important: To run `start` command, you must have [Docker](https://www.docker.com/) installed on your development environment.
 
 3. Accessible URL and credentials of your instance will appear on the console. After you logged in, you can start to develop your first project.
+
+## Libraries
+
+#### Bucket Module
+
+```shell
+npm install @spica-devkit/bucket
+```
+
+#### Database Module
+
+```shell
+npm install @spica-devkit/database
+```
+
+#### Identity Module
+
+```shell
+npm install @spica-devkit/database
+```
+
+#### Storage Module
+
+```shell
+npm install @spica-devkit/database
+```
