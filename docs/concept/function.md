@@ -20,7 +20,7 @@ See the following table for common `functions` use cases:
 
 ## Events and triggers
 
-There are events in the Spica. As an example, there is an event when there is a change in the database or receive an HTTP request
+There are events in the Spica. As an example, there is an event when there is a change in the database or when receiving an HTTP request.
 
 If you attach a trigger to your function, your function will be executed when the event is raised.
 
@@ -384,6 +384,22 @@ export default function () {
 This feature allows you to use 3rd party dependencies in your functions. Spica installs 3rd party libraries from NPM (node package manager). To use a 3rd party library, you just need to add it as a dependency to one of your functions by going to the particular function's edit page.
 
 > IMPORTANT: Each function is decoupled from the Spica environment. So, if you will use the same library for different functions, you need to download the library for each function.
+
+## Importing a Function
+
+You can call a function from another function within the same Spica instance. Spica allows you to import your functions. 
+
+```typescript
+// Your function id is from the function url
+// import * as Var from "../../<FUNCTION ID>/.build";
+import * as Book from "../../6393277d072513002c47767d/.build";
+
+export default function (req, res) {
+  const author = Book.getAuthor();
+}
+```
+
+> Note: The environment variables of the function will not be imported.
 
 ## Debugging
 
