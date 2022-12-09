@@ -16,7 +16,7 @@ The smallest rule setting in the passport module is the statement. Each statemen
 
 ## Identities
 
-An identity means an account in the Spica domain. Each identity has its policies and metadata. It contains **identifier** and **password** informations for authorization. You can attach a policy to identity and detach it at any time. You can see all attachable policies under the identity policies tab.
+An identity means an account in the Spica domain. Each identity has its policies and metadata. It contains **identifier** and **password** informations for authorization. You can attach a policy to identity and detach it at any time. You can see all attachable policies under the [identity policies](#policies).
 
 > Right after the installation, Spica creates a default identity to get you started. We suggest you change at least its password before going live.
 
@@ -32,7 +32,7 @@ If you want to store additional information on **Identities**, you can create cu
 
 ## API Key
 
-Instead of Identity, the API key allows machine-to-machine communication. The token, it provides doesn't have an expiration date so it can be used as long as it is not intentionally deleted from Spica.
+Instead of Identity, the API key allows machine-to-machine communication. The token it provides doesn't have an expiration date, so it can be used as long as it is not intentionally deleted from Spica.
 
 To create an API Key, navigate to **Access Management** -> **API Keys** in the left-hand menu.
 
