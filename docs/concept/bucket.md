@@ -36,12 +36,14 @@ You'll see the name of the newly created property is added to the list. Click on
 
 - **Required**: Makes the field required. If the field is empty, the data won't be saved.
 - **Read-only**: This one is used to prevent value changes on entry create and update.
-- **Default value**: If the value is empty on data creation, this value will be placed instead. 
+- **Default value**: If the value is empty on data creation, this value will be placed instead.
+- **Unique**: Makes sure each entry is unique. If not, the data won't be saved.
+- **Index**: Reduces the response time of the query.
 
 #### String
 
 - **Define pattern**: Regex field to validate the string values. If the regex pattern doesn't match, the data won't be saved.
-- **Enumerated field**: If toggled on, only the given values will be accepted as field values. 
+- **Make field enumerated**: If toggled on, only the given values will be accepted as field values. 
 
 #### Number
 
@@ -51,6 +53,13 @@ You'll see the name of the newly created property is added to the list. Click on
 
 - **Item should be unique**: If toggled on, each item in the array should be unique. Otherwise, the data won't be saved.
 - **Minimum and Maximum Items**: The element length of the array should be within these boundaries. 
+
+#### Relation 
+
+- **Bucket**: Choose from which Bucket the relation will be.
+- **One To One or One To Many**: Determines the relationship type.
+- **Dependent**: If toggled on, makes the entries dependent on each other; if one gets deleted the system will delete the other automatically.
+
 
 ### Some Examples
 
@@ -128,6 +137,11 @@ Spica optionally can track down the change history of bucket entries. To enable 
 Navigate to one of the Bucket's entries, look for the **History** button on the top right toolbar. Clicking on it will reveal the last 10 versions of the entry. Clicking the version numbers will only show that version of the data. If you intend to revert the entry to a certain point, just click on the revision number then hit the save button.
 
 ![Example Bucket](/img/docs/bucket/history.png)
+
+## Limitations
+
+Limitations are used to limit the Bucket's maximum number of documents. What comes after that limit is reached can be chosen; "Do not insert" or 
+"Insert but delete the oldest".
 
 ## Real-time
 

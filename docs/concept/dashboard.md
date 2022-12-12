@@ -18,10 +18,10 @@ Please note, each component accepts a different kind of JSON structure.
 
 Essentialy, dashboard requires two properties; `label` and `datasets`.
 - `title`: The title shown at the top of the chart.
-- `options`: Options for the chart such as.
-- `label`: The y-axis of the chart. Takes an array.
-- `datasets`: The x-axis of the chart. Takes an array or multiple arrays.
-- `legend`: Display the legend or not.
+- `options`: Options for the chart.
+- `label`: The y-axis or names for the chart. Takes an array.
+- `datasets`: The x-axis or the components for the chart. Takes an array or multiple arrays.
+- `legend`: Determines whether the legend will be displayed.
 - `width`: Width of the chart.
 - `filters`: Optional filters for filtering the chart. 
 

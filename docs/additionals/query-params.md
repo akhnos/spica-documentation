@@ -55,3 +55,9 @@ Example below  will return total entries count with all entries
 
 The example below  will return only scheduled entries
 > GET: `<YOUR-API>/data?schedule=true`
+
+The example below will return the entries that have a balance greater than 1000
+> GET: `<YOUR-API>/data?filter=balance>=1000`
+
+The example below will return the entries that match both of the filters
+> GET: `<YOUR-API>/data?filter=bank=="Bank of America"&&balance>=1000`

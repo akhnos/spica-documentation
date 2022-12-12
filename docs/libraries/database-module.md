@@ -1,10 +1,9 @@
 # @spica-devkit/database
-
-## Table of contents
-
 The database module is an in-memory module that has a public API for basic database operations like `FIND`, `INSERT`, `UPDATE`, `REPLACE`, `DELETE`, `DROP`.
 
 > Database module imported from `@spica-devkit/database`.
+
+## Table of contents
 
 ## Connecting to the database
 

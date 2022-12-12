@@ -2,9 +2,8 @@
 
 ## Table of contents
 
-> Bucket module imported from `@spica-devkit/bucket`.
-
 ## Initializing Bucket Module
+> Bucket module imported from `@spica-devkit/bucket`.
 
 To initialize a bucket, simply use the `initialize` function exported from the `@spica-devkit/bucket` module. Specify the authorization (APIKEY or IDENTITY) and optional API URL.
 
@@ -138,6 +137,16 @@ Note: Additionally, `Bucket.data.get()` function accepts a third optional `optio
 
 For more information about `Query Parameters`, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
 
+## Data Get All
+
+```typescript
+import * as Bucket from "@spica-devkit/bucket";
+
+export default function(req, res) {
+  Bucket.initialize({identity: "<USER TOKEN>"});
+  return Bucket.data.getAll("<BUCKET ID>");
+}
+```
 
 ## Data Get with Parameters
 
@@ -205,6 +214,8 @@ export default function(req, res) {
   });
 }
 ```
+
+> Warning: Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
 
 ## Data Patch
 

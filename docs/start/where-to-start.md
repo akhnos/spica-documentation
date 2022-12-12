@@ -25,12 +25,11 @@ Here is each step;
 3. <a href="https://spicaengine.com/docs/concept/storage">Storage</a>: file storage
 4. Libraries: 
     - <a href="https://spicaengine.com/docs/libraries/bucket-module">Bucket module</a>: bucket SDK for javascript in NPM
+    - <a href="https://spicaengine.com/docs/libraries/database-module">Database module</a>: database SDK for javascript in NPM
     - <a href="https://spicaengine.com/docs/libraries/identity-module">Identity module</a>: identity SDK for javascript in NPM
     - <a href="https://spicaengine.com/docs/libraries/storage-module">Storage module</a>: storage SDK for javascript in NPM
 5. <a href="https://spicaengine.com/docs/concept/functions">Functions</a>: creating cloud functions
 6. <a href="https://spicaengine.com/docs/concept/dashboard">Dashboard</a>: custom dashboads and graphs
-7. Libraries: 
-    - <a href="https://spicaengine.com/docs/libraries/database-module">Database module</a>: database SDK for javascript in NPM
 
 
 ## Examples
