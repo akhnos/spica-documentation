@@ -219,17 +219,17 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 
 ```
 
-Inputs array supports all [BucketProperty](https://spicaengine.com/docs/additionals/bucket-module-types#bucketproperty) type fields excluding the `relation` type. 
+Inputs array's type field supports all [Bucket Properties](bucket.md#properties) excluding the `relation`, `array`, and `object` types. 
 
-Also, you can add file input to the card like the following:
+You can add file input to the card like the following:
 
 ```json
 ...
 "inputs": [
   ...
   {
-    "key": "file",
-    "type": "file",
+    "key": "storage",
+    "type": "storage",
     "value": null,
     "title": "Select a file",
   }
@@ -241,6 +241,26 @@ Also, you can add file input to the card like the following:
     "title": "Submit",
     "enctype": "multipart/form-data", //or "application/x-www-form-urlencoded"
 },
+...
+```
+
+Also, you can have multiple selection input type like the following:
+
+```json
+...
+"inputs": [
+  ...
+  {
+    "key": "dropdown",
+    "type": "multiselect",
+    "title": "Select your inputs",
+    "items": {
+      "type": "string",
+      "enum": ["input1", "input2", "input3"]
+    },
+    "maxItems": 2
+  }
+],
 ...
 ```
 
