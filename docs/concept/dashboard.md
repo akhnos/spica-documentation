@@ -1,3 +1,8 @@
+---
+toc_min_heading_level: 2
+toc_max_heading_level: 4
+---
+
 # Dashboard
 
 The dashboard module allows you to create a new custom dashboard including custom data charts or tables. 
@@ -217,6 +222,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 
 ```
+#### Bucket Properties as Input Type
 
 Inputs array's type field supports all [Bucket Properties](bucket.md#properties) excluding the `relation`, `array`, and `object` types. 
 
