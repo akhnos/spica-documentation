@@ -213,7 +213,11 @@ export default function(req, res) {
 }
 ```
 
+:::caution
+
 > **Important**: Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
+
+:::
 
 ### Data Patch
 

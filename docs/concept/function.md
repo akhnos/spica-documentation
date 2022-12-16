@@ -387,6 +387,7 @@ This feature allows you to use 3rd party dependencies in your functions. Spica i
 
 Spica allows you to import your functions. You can call a function from another function within the same Spica instance as below; 
 
+
 ```typescript
 // Your function id is from the function url
 // import * as Var from "../../<FUNCTION ID>/.build";
