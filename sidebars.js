@@ -32,7 +32,7 @@ const sidebars = {
     {
       type: "category",
       label: 'Guide',
-      items: ['guide/contributing','guide/introduction','guide/open-source-build','guide/user-register-login'],
+      items: ['guide/contributing','guide/open-source-build','guide/user-register-login'],
     },
     {
       type: "category",

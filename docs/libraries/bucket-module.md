@@ -1,7 +1,5 @@
 # @spica-devkit/bucket
 
-## Table of contents
-
 ## Initializing Bucket Module
 > Bucket module imported from `@spica-devkit/bucket`.
 
@@ -15,9 +13,9 @@ OR
 Bucket.initialize({identity: "<USER TOKEN>", publicUrl: "<YOUR API URL>"}); // Example API url example.hq.spicaengine.com/api
 ```
 
-##### Operations
+## Operations
 
-## Get
+### Get
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -28,7 +26,7 @@ export default function(req, res) {
 }
 ```
 
-## Get All
+### Get All
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -39,7 +37,7 @@ export default function(req, res) {
 }
 ```
 
-## Insert
+### Insert
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -69,7 +67,7 @@ export default function(req, res) {
 }
 ```
 
-## Update
+### Update
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -102,7 +100,7 @@ export default function(req, res) {
 }
 ```
 
-## Delete
+### Delete
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -113,7 +111,7 @@ export default function(req, res) {
 }
 ```
 
-## Data Get
+### Data Get
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -137,7 +135,7 @@ Note: Additionally, `Bucket.data.get()` function accepts a third optional `optio
 
 For more information about `Query Parameters`, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
 
-## Data Get All
+### Data Get All
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -148,7 +146,7 @@ export default function(req, res) {
 }
 ```
 
-## Data Get with Parameters
+### Data Get with Parameters
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -178,7 +176,7 @@ Note: `Bucket.data.getAll()` function accepts a third optional `options` paramet
 
 For more information about Query Parameters, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
 
-## Data Insert
+### Data Insert
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -195,7 +193,7 @@ export default function(req, res) {
 }
 ```
 
-## Data Update
+### Data Update
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -215,9 +213,13 @@ export default function(req, res) {
 }
 ```
 
-> Warning: Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
+:::caution
 
-## Data Patch
+> **Important**: Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
+
+:::
+
+### Data Patch
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -234,7 +236,7 @@ export default function(req, res) {
 }
 ```
 
-## Data Remove
+### Data Remove
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -245,7 +247,7 @@ export default function(req, res) {
 }
 ```
 
-## Realtime Data Get
+### Realtime Data Get
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -256,7 +258,7 @@ export default function(req, res) {
 }
 ```
 
-## Realtime Data Get All
+### Realtime Data Get All
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -276,7 +278,7 @@ Note: Additionally, `Bucket.data.realtime.getAll()` function accepts a second op
 }
 ```
 
-## Realtime Data Insert
+### Realtime Data Insert
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -295,7 +297,7 @@ export default function(req, res) {
 }
 ```
 
-## Realtime Data Replace
+### Realtime Data Replace
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -315,7 +317,7 @@ export default function(req, res) {
 }
 ```
 
-## Realtime Data Patch
+### Realtime Data Patch
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";
@@ -334,7 +336,7 @@ export default function(req, res) {
 }
 ```
 
-## Realtime Data Remove
+### Realtime Data Remove
 
 ```typescript
 import * as Bucket from "@spica-devkit/bucket";

@@ -2,8 +2,6 @@
 
 This module is essentially a file manager on your Spica instance. You can store, list, and delete your files via this module.
 
-## Table of contents
-
 ## Online Image Editor
 
 To edit the image typed storage item, click the `three dots` next to the item to open the context menu. Clicking the `edit` button will take you to the Image Editing page.

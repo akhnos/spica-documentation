@@ -1,7 +1,5 @@
 # @spica-devkit/storage
 
-## Table of contents
-
 ## Initialize
 
 > Storage module imported from `@spica-devkit/storage`.
@@ -20,11 +18,11 @@ OR
 Storage.initialize({identity: "<USER TOKEN>", publicUrl: "<YOUR API URL>"}); 
 ```
 
-### Operations
+## Operations
 
 Here are some fundamental examples;
 
-## Get
+### Get
 
 ```typescript
 import * as Storage from "@spica-devkit/storage";
@@ -35,7 +33,7 @@ export default function(req, res) {
 }
 ```
 
-## Get All
+### Get All
 
 ```typescript
 import * as Storage from "@spica-devkit/storage";
@@ -46,7 +44,7 @@ export default function(req, res) {
 }
 ```
 
-## Download
+### Download
 ```typescript
 import * as Storage from "@spica-devkit/storage";
 
@@ -61,7 +59,7 @@ export default function(req, res) {
 }
 ```
 
-## Insert
+### Insert
 
 ```typescript
 import * as Storage from "@spica-devkit/storage";
@@ -80,7 +78,7 @@ export default function(req, res) {
 }
 ```
 
-## Insert Many
+### Insert Many
 
 ```typescript
 import * as Storage from "@spica-devkit/storage";
@@ -98,7 +96,7 @@ export default function(req, res) {
 }
 ```
 
-## Update
+### Update
 
 ```typescript
 import * as Storage from "@spica-devkit/storage";
@@ -116,7 +114,7 @@ export default function(req, res) {
 }
 ```
 
-## Delete
+### Delete
 
 ```typescript
 import * as Storage from "@spica-devkit/storage";

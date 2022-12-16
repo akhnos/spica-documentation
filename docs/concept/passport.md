@@ -2,8 +2,6 @@
 
 Spica supports built-in authentication and authorization on Spica Client and API called as `Passport Module`. Out of the box, Spica supports two different authentication strategies. This document will explain the fundamentals of those strategies.
 
-## Table of contents
-
 ## Statements
 
 The smallest rule setting in the passport module is the statement. Each statement is responsible for one functionality. As an example; allowing read functionality in a bucket system is a statement. Also, you can define specific resources to limit account abilities. Statements settings are listed below;

@@ -1,7 +1,5 @@
 # Cloud Function Hints
 
-## Table of contents
-
 ## Reducing Response Time
 
 Users are not willing to wait more than 500 milliseconds these days. Because of the time limit, your custom APIs should respond as possible as fast. To take the best performance from the cloud functions, you can follow the steps below;

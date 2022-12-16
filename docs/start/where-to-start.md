@@ -1,7 +1,5 @@
 # Where To Start
 
-## Table of contents
-
 ## Domains
 
 There are 4 main domains under Spica Engine currently. Every domain is being served as a subdomain. First, we define every domain below;

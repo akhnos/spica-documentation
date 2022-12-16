@@ -1,7 +1,5 @@
 # User as Content
 
-## Table of contents
-
 ## Users Bucket
 
 Some applications have a user login system, some have not. This is why users are managed as content in the Spica environment. Also, you can create relations between your users bucket and other buckets such as wallet .etc. But to apply the second-layer security (entry-level security), HTTP requests should have identity objects as a header parameter. So you should include every security-related object as a custom attribute in your identity object.

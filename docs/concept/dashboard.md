@@ -1,10 +1,14 @@
+---
+toc_min_heading_level: 2
+toc_max_heading_level: 4
+---
+
 # Dashboard
 
-The dashboard module allows you to create a new custom dashboard including custom data charts or tables.
+The dashboard module allows you to create a new custom dashboard including custom data charts or tables. 
+Spica uses [Chart.js](https://www.chartjs.org/) to create charts and therefore supports every options for every Chart.js operation.
 
 To list all of your Dashboards, simply open the **Dashboard** section of the side panel.
-
-## Table of contents
 
 ## Creating a new custom Dashboard
 
@@ -218,10 +222,11 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 
 ```
+#### Bucket Properties as Input Type
 
-Inputs array supports all [BucketProperty](https://spicaengine.com/docs/additionals/bucket-module-types#bucketproperty) type fields excluding the `relation` type. 
+Inputs array's type field supports all [Bucket Properties](bucket.md#properties) excluding the `relation`, `array`, and `object` types. 
 
-Also, you can add file input to the card like the following:
+You can add file input to the card like the following:
 
 ```json
 ...
@@ -241,6 +246,26 @@ Also, you can add file input to the card like the following:
     "title": "Submit",
     "enctype": "multipart/form-data", //or "application/x-www-form-urlencoded"
 },
+...
+```
+
+Also, you can have multiple selection input type like the following:
+
+```json
+...
+"inputs": [
+  ...
+  {
+    "key": "dropdown",
+    "type": "multiselect",
+    "title": "Select your inputs",
+    "items": {
+      "type": "string",
+      "enum": ["input1", "input2", "input3"]
+    },
+    "maxItems": 2
+  }
+],
 ...
 ```
 

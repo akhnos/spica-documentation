@@ -4,8 +4,6 @@ Functions are an event-driven execution context for your spica. Simply, you can 
 
 Within a function, you can do almost everything you want to do.
 
-## Table of contents
-
 ## Use cases
 
 The on-demand nature of functions makes it a perfect candidate for event-driven execution.
@@ -387,7 +385,8 @@ This feature allows you to use 3rd party dependencies in your functions. Spica i
 
 ## Importing a Function
 
-You can call a function from another function within the same Spica instance. Spica allows you to import your functions. 
+Spica allows you to import your functions. You can call a function from another function within the same Spica instance as below; 
+
 
 ```typescript
 // Your function id is from the function url

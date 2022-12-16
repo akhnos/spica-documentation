@@ -2,8 +2,6 @@
 
 Buckets are the main foundation of Spica Development Engine. While creating a Bucket, the user defines a data schema. Once you create your bucket, Spica will generate Rest API endpoints automatically. So you can send an HTTP request to get/update/insert bucket data.
 
-## Table of contents
-
 ## Bucket Creation Steps
 
 To create a bucket you need to define bucket name, description, and fields. You can also customize your bucket view and add rules to apply security checks. On the top bar, you'll see an icon as default. You can click to change the icon of the Bucket. That icon will be shown on the sidebar next to the Bucket title. While the Title is limited to 15 characters, the Description is limited to 250. Once you finish creating a new bucket, you will see it on navigator. Bucket ID will be assigned automatically so you can access your data via API. For more details visit API Reference.
@@ -58,7 +56,7 @@ You'll see the name of the newly created property is added to the list. Click on
 
 - **Bucket**: Choose from which Bucket the relation will be.
 - **One To One or One To Many**: Determines the relationship type.
-- **Dependent**: If toggled on, makes the entries dependent on each other; if one gets deleted the system will delete the other automatically.
+- **Dependent**: If toggled on, makes the related document to dependent on the current document; if any entry gets deleted from the current bucket the system will delete the related document automatically.
 
 
 ### Some Examples
