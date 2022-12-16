@@ -59,9 +59,13 @@ You can invoke your function with an HTTP request using the `POST`, `PUT`, `GET`
 To be able to create a function with HTTP trigger, you need two information;
 Path and Method, the method must be one of the specified HTTP methods above also you need a path like above.
 
-> HINT: When you save your function the endpoint will be provisioned automatically.
+:::hint
+When you save your function the endpoint will be provisioned automatically.
+:::
 
-> **IMPORTANT:** The path and method are not validated for any collision with another function's path and method. So make sure that the path and method not used by other functions otherwise you function may override other function's path.
+:::danger
+The path and method are not validated for any collision with another function's path and method. So make sure that the path and method not used by other functions otherwise you function may override other function's path.
+:::
 
 #### Method
 
@@ -175,6 +179,20 @@ You need to parse the payload to be able to use it in a function.
 | Text   | application/xml                   | No        | You need to install an appropriate module to handle the request payload. |
 | Text   | application/yaml                  | No        | You need to install an appropriate module to handle the request payload. |
 
+#### Getting the Identity Token From Header
+
+The `Identity Token` can be retrieved from the request headers. This token can be used with every `initialize` function.
+
+```typescript
+const headerAuthorization = req.headers.get("authorization");
+if (!headerAuthorization) return res.status(401).send({message:"Unauthorized"});
+const token = headerAuthorization.split(" ")[1]; //Expect IDENTITY eyJhbGciOiJIU...IEUV_0dsmLZ4JE
+
+...
+
+Bucket.initialize({identity: token, publicUrl: "YOUR_PUBLIC_URL"})
+```
+
 ### Database
 
 Database trigger invokes your function when a specific database event is raised in a collection of databases. The database trigger can invoke your function with `INSERT`, `UPDATE`, `REPLACE`, `DELETE`, `DROP` events in a specific database collection. When the event is raised, your function will be invoked with the changes in the collection.
@@ -185,7 +203,9 @@ To be able to create a function that is triggered by a database event, you need 
 - **Event Type:** Type of the event that happens in the collection. It can be `INSERT`, `UPDATE`, `REPLACE`, `DELETE`, `DROP`.
 - **Full Document:** Whether you want only full document or changes on passed data.
 
-> IMPORTANT: When a REPLACE/UPDATE event is immediately followed by a DELETE/DROP event, the `fullDocument` property in the event will be `null`.
+:::danger
+When a REPLACE/UPDATE event is immediately followed by a DELETE/DROP event, the `fullDocument` property in the event will be `null`.
+:::
 
 A basic database function looks like this:
 
@@ -381,7 +401,8 @@ export default function () {
 
 This feature allows you to use 3rd party dependencies in your functions. Spica installs 3rd party libraries from NPM (node package manager). To use a 3rd party library, you just need to add it as a dependency to one of your functions by going to the particular function's edit page.
 
-> IMPORTANT: Each function is decoupled from the Spica environment. So, if you will use the same library for different functions, you need to download the library for each function.
+:::info:::
+Each function is decoupled from the Spica environment. So, if you will use the same library for different functions, you need to download the library for each function.
 
 ## Importing a Function
 
@@ -396,8 +417,9 @@ export default function (req, res) {
   const author = Book.getAuthor();
 }
 ```
-
-> Note: The environment variables of the function will not be imported.
+:::note
+The environment variables of the function will not be imported.
+:::
 
 ## Debugging
 
