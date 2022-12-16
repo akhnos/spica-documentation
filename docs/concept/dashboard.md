@@ -233,8 +233,8 @@ You can add file input to the card like the following:
 "inputs": [
   ...
   {
-    "key": "storage",
-    "type": "storage",
+    "key": "file",
+    "type": "file",
     "value": null,
     "title": "Select a file",
   }
