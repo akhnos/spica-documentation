@@ -4,8 +4,6 @@ Functions are an event-driven execution context for your spica. Simply, you can 
 
 Within a function, you can do almost everything you want to do.
 
-## Table of contents
-
 ## Use cases
 
 The on-demand nature of functions makes it a perfect candidate for event-driven execution.

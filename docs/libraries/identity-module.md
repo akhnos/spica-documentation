@@ -1,7 +1,5 @@
 # @spica-devkit/identity
 
-## Table of contents
-
 ## Initialize
 
 > Identity module imported from `@spica-devkit/identity`.
@@ -46,11 +44,11 @@ export default async function() {
 }
 ```
 
-### Operations
+## Operations
 
 Here are some fundamental examples;
 
-## Get
+### Get
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";
@@ -61,7 +59,7 @@ export default function(req, res) {
 }
 ```
 
-## Get All
+### Get All
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";
@@ -73,7 +71,7 @@ export default function(req, res) {
 }
 ```
 
-## Insert
+### Insert
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";
@@ -97,7 +95,7 @@ export default function(req, res) {
 }
 ```
 
-## Update
+### Update
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";
@@ -121,7 +119,7 @@ export default function(req, res) {
 }
 ```
 
-## Delete
+### Delete
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";
@@ -134,7 +132,7 @@ export default function(req, res) {
 }
 ```
 
-## Attach Policy
+### Attach Policy
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";
@@ -147,7 +145,7 @@ export default function(req, res) {
 }
 ```
 
-## Detach Policy
+### Detach Policy
 
 ```typescript
 import * as Identity from "@spica-devkit/identity";

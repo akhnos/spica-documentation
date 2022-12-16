@@ -4,8 +4,6 @@
 We would love for you to contribute to Spica and help make it even better than it is
 today! As a contributor, here are the guidelines we would like you to follow:
 
-## Table of contents
-
 ## Code of Conduct
 
 Help us keep Spica open and inclusive. Please read and follow our [Code of Conduct][coc].

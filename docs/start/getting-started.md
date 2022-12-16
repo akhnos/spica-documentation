@@ -8,7 +8,7 @@ slug: /
 
 ## Introduction
 
-These documents will take you from zero to hero and helps you to discover advanced features of the Spica Development Engine.
+These documents will take you from zero to hero and help you to discover advanced features of the Spica Development Engine.
 
 ### What is Spica?
 
@@ -26,21 +26,21 @@ As Spica has an API-first approach, any features of the engine are controllable 
 
 ### How To Start
 
-We recommend you to start with `Bucket` documentation if you are new to Spica. After creating a bucket and set up your rules you can play with RestAPIs or GraphQL APIs. Once you are done with APIs, the following function module will allow you to create a fully custom backend.
+We recommend you to start with `Bucket` documentation if you are new to Spica. After creating a bucket and setting up your rules you can play with RestAPIs or GraphQL APIs. Once you are done with APIs, the following function module will allow you to create a fully custom backend.
 
 ## Features
 
 ### Custom Data Modeling
 
-Everything is designed to provide the highest speed for developing custom projects, startups, and automation. From this perspective, the Bucket Module is in the center of every feature. It gives custom data modeling and ready-to-consume RestAPIs and GraphQL APIs. The bucket module supports limited panel view customization for simple projects as well. For more details, you can take a look at `Bucket` documentation. 
+Everything is designed to provide the highest speed for developing custom projects, startups, and automation. From this perspective, the Bucket Module is in the center of every feature. It gives custom data modeling and ready-to-consume RestAPIs and GraphQL APIs. The bucket module supports limited panel view customization for simple projects as well. For more details, you can take a look at the [Bucket](/docs/concept/bucket.md) documentation. 
 
 ### File Management
 
-For file management, you can use Storage in your Spica instances. Native Storage is working on the disk in your local machine while `Managed Spica Instances` are working with built-in CDN. 
+For file management, you can use `Storage` in your Spica instances. Native Storage is working on the disk in your local machine while `Managed Spica Instances` are working with built-in CDN. 
 
 ### Server Side Functions
 
-Function Module is designed to completing custom backend logics such as payment integrations or other 3rd party machine-to-machine use cases. Also, you can run custom scheduled tasks in the functions module. 
+Function Module is designed to complete custom backend logics such as payment integrations or other 3rd party machine-to-machine use cases. You can also run custom scheduled tasks in the functions module. 
 
 ### Passport Module
 

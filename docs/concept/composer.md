@@ -1,7 +1,5 @@
 # Composer
 
-## Table of contents
-
 ## Important: The composer module is still under active development
 
 The purpose of the composer module is to give the users to upload their front-end components and use them with data they have in harmony. Once you upload your components to NPM, you can import your components into your project. If your components have dependencies on another package from NPM, you can import other 3rd party libraries as well.

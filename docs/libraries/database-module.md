@@ -3,8 +3,6 @@ The database module is an in-memory module that has a public API for basic datab
 
 > Database module imported from `@spica-devkit/database`.
 
-## Table of contents
-
 ## Connecting to the database
 
 You can get the database instance with the `database()` function exported from the `@spica-devkit/database` module. This module will is designed to work in Spica instance. That's why you can NOT use this module in your client application.
