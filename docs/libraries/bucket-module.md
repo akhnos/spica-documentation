@@ -122,7 +122,9 @@ export default function(req, res) {
 }
 ```
 
-Note: Additionally, `Bucket.data.get()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::note
+Additionally, `Bucket.data.get()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::
 
 ```json
 {
@@ -160,7 +162,9 @@ export default function(req, res) {
 }
 ```
 
-Note: `Bucket.data.getAll()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::note
+`Bucket.data.getAll()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::
 
 ```json
 {
@@ -213,7 +217,9 @@ export default function(req, res) {
 }
 ```
 
-> **Important**: Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
+:::danger
+Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
+:::
 
 ### Data Patch
 
@@ -265,7 +271,9 @@ export default function(req, res) {
 }
 ```
 
-Note: Additionally, `Bucket.data.realtime.getAll()` function accepts a second optional `queryParams` parameter. The following is the structure of the `queryParams` parameter:
+:::note
+Additionally, `Bucket.data.realtime.getAll()` function accepts a second optional `queryParams` parameter. The following is the structure of the `queryParams` parameter:
+:::
 
 ```json
 {

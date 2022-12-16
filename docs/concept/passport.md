@@ -16,7 +16,9 @@ The smallest rule setting in the passport module is the statement. Each statemen
 
 An identity means an account in the Spica domain. Each identity has its policies and metadata. It contains **identifier** and **password** informations for authorization. You can attach a policy to identity and detach it at any time. You can see all attachable policies under the [identity policies](#policies).
 
-> Right after the installation, Spica creates a default identity to get you started. We suggest you change at least its password before going live.
+:::note
+Right after the installation, Spica creates a default identity to get you started. We suggest you change at least its password before going live.
+:::
 
 To create an Identitiy, navigate to **Access Management** -> **Identities** in the left-hand menu.
 
@@ -40,7 +42,9 @@ To create an API Key, navigate to **Access Management** -> **API Keys** in the l
 
 Once the saving is completed, you can use the **API Key** value on your API calls in the header section.
 
-> For more information about how to use API Key, please refer to the API Documentations.
+:::note
+For more information about how to use API Key, please refer to the API Documentations.
+:::
 
 ## Strategies
 
@@ -50,7 +54,9 @@ Our passport module supports SSO and OAuth strategies as well. You will find the
 
 Policies are a multi-purpose designed rule management structure. To create a rule in the passport module, you can create a policy and assign it to to your **Identities** and **API Keys** to encapsulate and control their capabilities. Also to have a role-based account management system, you can use policies. A policy can include multiple statements.
 
-> NOTE: To create role-based account management, you should assign multiple statements to policies. For example; the “Content Editor” policy should have all bucket statements and storage statements.
+:::note
+To create role-based account management, you should assign multiple statements to policies. For example; the “Content Editor” policy should have all bucket statements and storage statements.
+:::
 
 ### Using the Policies
 

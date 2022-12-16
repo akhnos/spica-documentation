@@ -8,7 +8,10 @@ This tutorial helps you to install Spica in different environments. We provide a
 
 Spica has a command-line interface for quick installation. To use it, you must have [Docker](https://www.docker.com/) and [NodeJs](https://nodejs.org) installed on your development environment.
 
-> IMPORTANT: There has to be at least one docker machine that is up and running in your environment. To create a docker machine enter the following command to your terminal:
+:::caution
+There has to be at least one docker machine that is up and running in your environment. To create a docker machine enter the following command to your terminal:
+:::
+
 >
 > ```shell
 > $ docker-machine create <machine name>
@@ -168,7 +171,9 @@ You will see a user named John Doe listed in the entries.
 
 Our newly created User Bucket is ready with an entry. The list of **Users** is accessible at http://localhost:4500/api/bucket/{bucket_id}
 
-> Note: The bucket id of the newly created **Users** bucket can be found by clicking on the "i" icon on the list view.
+:::note
+The bucket id of the newly created **Users** bucket can be found by clicking on the "i" icon on the list view.
+:::
 
 **Congratulations**
 You have created your first Bucket and your first bucket entry on Spica and have accessed it both via Spica Client and the API.

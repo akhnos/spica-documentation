@@ -16,7 +16,9 @@ $ npm install @spica/cli -g
 $ spica project start <instance name>
 ```
 
-> Important: To run `start` command, you must have [Docker](https://www.docker.com/) installed on your development environment.
+:::info
+To run `start` command, you must have [Docker](https://www.docker.com/) installed on your development environment.
+:::
 
 3. Accessible URL and credentials of your instance will appear on the console. After you logged in, you can start to develop your first project.
 
