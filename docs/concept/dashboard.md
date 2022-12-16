@@ -1,10 +1,9 @@
 # Dashboard
 
-The dashboard module allows you to create a new custom dashboard including custom data charts or tables.
+The dashboard module allows you to create a new custom dashboard including custom data charts or tables. 
+Spica uses [Chart.js](https://www.chartjs.org/) to create charts and therefore supports everything every Chart.js operation.
 
 To list all of your Dashboards, simply open the **Dashboard** section of the side panel.
-
-## Table of contents
 
 ## Creating a new custom Dashboard
 
