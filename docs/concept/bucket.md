@@ -62,7 +62,7 @@ If you change a field type after the creation (e.g. changing a `string` field to
 
 - **Bucket**: Choose from which Bucket the relation will be.
 - **One To One or One To Many**: Determines the relationship type.
-- **Dependent**: If toggled on, makes the entries dependent on each other; if one gets deleted the system will delete the other automatically.
+- **Dependent**: If toggled on, makes the related document to dependent on the current document; if any entry gets deleted from the current bucket the system will delete the related document automatically.
 
 
 ### Some Examples

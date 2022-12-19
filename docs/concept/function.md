@@ -406,7 +406,8 @@ Each function is decoupled from the Spica environment. So, if you will use the s
 
 ## Importing a Function
 
-You can call a function from another function within the same Spica instance. Spica allows you to import your functions. 
+Spica allows you to import your functions. You can call a function from another function within the same Spica instance as below; 
+
 
 ```typescript
 // Your function id is from the function url
