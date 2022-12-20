@@ -135,7 +135,7 @@ Additionally, `Bucket.data.get()` function accepts a third optional `options` pa
 }
 ```
 
-For more information about `Query Parameters`, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
+For more information about `Query Parameters`, please visit [this page](/docs/additionals/query-params.md).
 
 ### Data Get All
 
@@ -178,7 +178,7 @@ export default function(req, res) {
 }
 ```
 
-For more information about Query Parameters, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
+For more information about Query Parameters, please visit [this page](/docs/additionals/query-params.md).
 
 ### Data Insert
 

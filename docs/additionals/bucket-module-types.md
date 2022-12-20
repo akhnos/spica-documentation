@@ -50,7 +50,7 @@ Example:
 | `primary`     | Primary field of the bucket                                                                          | Yes      | `string`                                                                                                                                                                                               |
 | `readonly`    | If you mark this bucket as read only, no one will be able to edit or change any data in this bucket. | No       | `boolean`                                                                                                                                                                                              |
 | `required`    | Array of required bucket property name                                                               | No       | `Array<string>`                                                                                                                                                                                        |
-| `acl`         | Access Control Rules for the bucket                                                                  | No       | `{"read": ` [AccessControlRules](https://spicaengine.com/docs/additionals/access-control-rules) `, {"write": `[AccessControlRules](https://spicaengine.com/docs/additionals/access-control-rules) `}}` |
+| `acl`         | Access Control Rules for the bucket                                                                  | No       | `{"read": ` [AccessControlRules](access-control-rules.md) `, {"write": `[AccessControlRules](access-control-rules.md) `}}` |
 
 ## BucketProperty
 

@@ -134,7 +134,7 @@ The final form of a multilingual property will be like this:
 
 ## Rules
 
-Bucket Rules are used to apply security checks to the data. It uses the ACR syntax and follows its rules. For more information about `Access Control Rules`, please visit [this page](https://spicaengine.com/docs/additionals/access-control-rules).
+Bucket Rules are used to apply security checks to the data. It uses the ACR syntax and follows its rules. For more information about `Access Control Rules`, please visit [this page](/docs/additionals/access-control-rules.md).
 
 ## Auto-Publish
 
@@ -188,4 +188,4 @@ async function getUsers(){
 }
 ```
 
-For more information about the bucket libraries, please visit [this page](https://spicaengine.com/docs/libraries/bucket-module).
+For more information about the bucket libraries, please visit [this page](/docs/libraries/bucket-module.md).
