@@ -27,7 +27,7 @@ const sidebars = {
     {
       type: "category",
       label: 'Concept',
-      items: ['concept/bucket','concept/passport','concept/function','concept/storage','concept/dashboard','concept/user-activities','concept/webhook','concept/l10n','concept/asset-store'],
+      items: ['concept/bucket','concept/passport','concept/function','concept/storage','concept/dashboard','concept/user-activities','concept/webhook','concept/l10n','concept/asset-store', 'concept/cli', 'concept/orm'],
     },
     {
       type: "category",
