@@ -401,8 +401,9 @@ export default function () {
 
 This feature allows you to use 3rd party dependencies in your functions. Spica installs 3rd party libraries from NPM (node package manager). To use a 3rd party library, you just need to add it as a dependency to one of your functions by going to the particular function's edit page.
 
-:::info:::
+:::info
 Each function is decoupled from the Spica environment. So, if you will use the same library for different functions, you need to download the library for each function.
+:::
 
 ## Importing a Function
 
