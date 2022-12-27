@@ -26,6 +26,8 @@ Most of the popular fonts are in the system already. Also, you can import any fo
 
 You can import 3rd party libraries (named as a collection) and also you can apply custom JS code. This custom code will be injected inside HTML head tags. 
 
-> NOTE: Injecting code is very dangerous if you don’t know how to coding. We don’t do any checks on custom injected codes.
+:::note
+Injecting code is very dangerous if you don’t know how to coding. We don’t do any checks on custom injected codes.
+:::
 
 For further details read API references and Guide documents.

@@ -122,7 +122,9 @@ export default function(req, res) {
 }
 ```
 
-Note: Additionally, `Bucket.data.get()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::note
+Additionally, `Bucket.data.get()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::
 
 ```json
 {
@@ -133,7 +135,7 @@ Note: Additionally, `Bucket.data.get()` function accepts a third optional `optio
 }
 ```
 
-For more information about `Query Parameters`, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
+For more information about `Query Parameters`, please visit [this page](/docs/additionals/query-params.md).
 
 ### Data Get All
 
@@ -160,7 +162,9 @@ export default function(req, res) {
 }
 ```
 
-Note: `Bucket.data.getAll()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::note
+`Bucket.data.getAll()` function accepts a third optional `options` parameter. The following is the structure of the `options` parameter:
+:::
 
 ```json
 {
@@ -174,7 +178,7 @@ Note: `Bucket.data.getAll()` function accepts a third optional `options` paramet
 }
 ```
 
-For more information about Query Parameters, please visit [this page](https://spicaengine.com/docs/additionals/query-params).
+For more information about Query Parameters, please visit [this page](/docs/additionals/query-params.md).
 
 ### Data Insert
 
@@ -215,8 +219,8 @@ export default function(req, res) {
 
 :::caution
 
-> **Important**: Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
-
+:::danger
+Any field not specified will be  **removed**. If you _only_ want to change one or two parameters, use [Data Patch](#data-patch)
 :::
 
 ### Data Patch
@@ -269,7 +273,9 @@ export default function(req, res) {
 }
 ```
 
-Note: Additionally, `Bucket.data.realtime.getAll()` function accepts a second optional `queryParams` parameter. The following is the structure of the `queryParams` parameter:
+:::note
+Additionally, `Bucket.data.realtime.getAll()` function accepts a second optional `queryParams` parameter. The following is the structure of the `queryParams` parameter:
+:::
 
 ```json
 {

@@ -15,7 +15,9 @@ To set up a webhook, you have to define a name, body, and a trigger.
 - Webhook body should be in JSON format. To take a value from your bucket, you can use three curly braces. So as an example you can set your webhook body like `{“text”: “{{{document.title}}}“}`
 - Webhook trigger can be any of `INSERT`, `UPDATE`, `DELETE`, `REPLACE` values.
 
-> IMPORTANT: Each webhook trigger works after the action happens. So, if you use the `DELETE` trigger for a webhook, you can not reach the `document` fields because `document` will be already removed when the Spica sends the webhook call.
+:::caution
+Each webhook trigger works after the action happens. So, if you use the `DELETE` trigger for a webhook, you can not reach the `document` fields because `document` will be already removed when the Spica sends the webhook call.
+:::
 
 Example webhook body:
 
@@ -33,4 +35,6 @@ Example webhook body:
 
 You can see all webhook activities in the `Webhook Logs` section. You can filter the logs by webhook ID, date, or result (success/fail). In a standard build of Spica, there is no time limitation on webhook logs. So you can store all webhook logs forever.
 
-> IMPORTANT: Because of no time limit on webhook logs, we suggest you clear webhook logs in a time interval. Otherwise, you should consider your server hardware to use Spica instance with high performance.
+:::caution
+Because of no time limit on webhook logs, we suggest you clear webhook logs in a time interval. Otherwise, you should consider your server hardware to use Spica instance with high performance.
+:::

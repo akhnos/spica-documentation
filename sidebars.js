@@ -22,12 +22,12 @@ const sidebars = {
     {
       type: "category",
       label: 'Start',
-      items: ['start/getting-started','start/installation','start/where-to-start'],
+      items: ['start/getting-started','start/installation','start/where-to-start', 'start/cli'],
     },
     {
       type: "category",
       label: 'Concept',
-      items: ['concept/bucket','concept/passport','concept/function','concept/storage','concept/dashboard','concept/user-activities','concept/webhook','concept/l10n','concept/asset-store'],
+      items: ['concept/bucket','concept/passport','concept/function','concept/storage','concept/dashboard','concept/user-activities','concept/webhook','concept/l10n','concept/asset-store', 'concept/orm'],
     },
     {
       type: "category",

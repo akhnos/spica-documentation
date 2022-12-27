@@ -1,12 +1,9 @@
----
-toc_min_heading_level: 2
-toc_max_heading_level: 4
----
-
 # Dashboard
 
 The dashboard module allows you to create a new custom dashboard including custom data charts or tables. 
 Spica uses [Chart.js](https://www.chartjs.org/) to create charts and therefore supports every options for every Chart.js operation.
+
+The dashboard module can be used for displaying and analyzing any statistical data. For example, displaying how many online users your application has, android vs ios users, money earned in the last month, and many more.
 
 To list all of your Dashboards, simply open the **Dashboard** section of the side panel.
 
@@ -29,7 +26,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 - `width`: Width of the chart.
 - `filters`: Optional filters for filtering the chart. 
 
-### Example Line Data Response
+## Example Line Data Response
 
 ```json
 {
@@ -46,7 +43,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Radar Data Response
+## Example Radar Data Response
 
 ```json
 {
@@ -66,7 +63,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Bar Data Response
+## Example Bar Data Response
 
 ```json
 {
@@ -85,7 +82,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Pie Data Response
+## Example Pie Data Response
 
 ```json
 {
@@ -101,7 +98,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Doughnut Data Response
+## Example Doughnut Data Response
 
 ```json
 {
@@ -117,7 +114,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Bubble Data Response
+## Example Bubble Data Response
 
 ```json
 {
@@ -148,7 +145,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Scatter Data Response
+## Example Scatter Data Response
 
 ```json
 {
@@ -177,7 +174,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 ```
 
-### Example Polar Data Response
+## Example Polar Data Response
 
 ```json
 {
@@ -193,7 +190,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
   ]
 }
 ```
-### Example Card Response
+## Example Card Response
 
 ```json
 {
@@ -222,7 +219,7 @@ Essentialy, dashboard requires two properties; `label` and `datasets`.
 }
 
 ```
-#### Bucket Properties as Input Type
+### Bucket Properties as Input Type
 
 Inputs array's type field supports all [Bucket Properties](bucket.md#properties) excluding the `relation`, `array`, and `object` types. 
 
@@ -269,7 +266,7 @@ Also, you can have multiple selection input type like the following:
 ...
 ```
 
-### Example Table Data Response
+## Example Table Data Response
 
 ```json
 {
