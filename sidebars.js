@@ -22,7 +22,7 @@ const sidebars = {
     {
       type: "category",
       label: 'Start',
-      items: ['start/getting-started','start/installation','start/where-to-start', 'concept/cli'],
+      items: ['start/getting-started','start/installation','start/where-to-start', 'start/cli'],
     },
     {
       type: "category",
