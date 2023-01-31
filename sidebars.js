@@ -37,7 +37,7 @@ const sidebars = {
     {
       type: "category",
       label: 'Additionals',
-      items: ['additionals/bucket-module-types','additionals/query-params','additionals/access-control-rules'],
+      items: ['additionals/bucket-module-types','additionals/query-params','additionals/access-control-rules', 'additionals/git-versioning'],
     },
     {
       type: "category",
