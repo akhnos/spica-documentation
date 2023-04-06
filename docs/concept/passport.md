@@ -16,7 +16,9 @@ The smallest rule setting in the passport module is the statement. Each statemen
 
 An identity means an account in the Spica domain. Each identity has its policies and metadata. It contains **identifier** and **password** informations for authorization. You can attach a policy to identity and detach it at any time. You can see all attachable policies under the [identity policies](#policies).
 
-> Right after the installation, Spica creates a default identity to get you started. We suggest you change at least its password before going live.
+:::note
+Right after the installation, Spica creates a default identity to get you started. We suggest you change at least its password before going live.
+:::
 
 To create an Identitiy, navigate to **Access Management** -> **Identities** in the left-hand menu.
 
@@ -27,6 +29,8 @@ To create an Identitiy, navigate to **Access Management** -> **Identities** in t
 ### Adding Additional Properties
 
 If you want to store additional information on **Identities**, you can create custom fields. To create a custom field on Identities, navigate to **Access Management** -> **Settings** in the left-hand menu.
+
+These properties can be multiple types, these are; `string`, `number`, `boolean`, `multiselect`, `relation`. An example of a custom property could be age with the number type, meaning that when you create an identity, you will also assign an age to the user.
 
 ## API Key
 
@@ -40,17 +44,21 @@ To create an API Key, navigate to **Access Management** -> **API Keys** in the l
 
 Once the saving is completed, you can use the **API Key** value on your API calls in the header section.
 
-> For more information about how to use API Key, please refer to the API Documentations.
+:::note
+For more information about how to use API Key, please refer to the API Documentations.
+:::
 
 ## Strategies
 
-Our passport module supports SSO and OAuth strategies as well. You will find these Access Management screen on the “Strategies” page. Once you set up your strategy, the login button will be visible on the login page. You can use both normal login and strategy login at the same time.
+Our passport module supports SSO and OAuth strategies as well. You will find these Access Management screen on the **Strategies** page. Once you set up your strategy, the login button will be visible on the login page. You can use both normal login and strategy login at the same time.
 
 ## Policies
 
 Policies are a multi-purpose designed rule management structure. To create a rule in the passport module, you can create a policy and assign it to to your **Identities** and **API Keys** to encapsulate and control their capabilities. Also to have a role-based account management system, you can use policies. A policy can include multiple statements.
 
-> NOTE: To create role-based account management, you should assign multiple statements to policies. For example; the “Content Editor” policy should have all bucket statements and storage statements.
+:::note
+To create role-based account management, you should assign multiple statements to policies. For example; the “Content Editor” policy should have all bucket statements and storage statements.
+:::
 
 ### Using the Policies
 
@@ -73,13 +81,11 @@ Click on the `Add Statement` button to add a new statement. You'll see a new sta
 ![Example Custom Policy](/img/docs/passport/custom_policies.png)
 
 `Module`: Select the module of the Statement.
-
 `Actions`: After selecting the module, this section will show up. You'll see a list of actions on the selected module such as `Create`, `Index`, `Delete` etc. Select one or more actions to add to your Statement.
 
 > `Index` action allows listing documents while `Show` action allows seeing an individual document
 
-`Edit Action`:
-Optional. If you want to allow actions on a resource-based, click on the `pen` icon, and enter the \_id of the resource on either to `Included Resources` section or `Excluded Resources` section.
+`Edit Action`: Optional. If you want to allow actions resource-based, click on the `pen` icon, and enter the \_id of the resource on either to `Included Resources` section or `Excluded Resources` section.
 You can add an infinite number of resources to a Statement. Use `*` to include all resources.
 All resources are excluded as default, so you should include all resources before excluding resources.
 Check the examples below for more detailed usages:
@@ -92,6 +98,3 @@ Check the examples below for more detailed usages:
 | \*                 | admin_key           | API Key     | Show   | Show all API Keys except the **admin_key**                                         |
 | authors/\*         | authors/james       | Bucket Data | Index  | List all authors except the **james**                                              |
 
-## Settings
-
-You can define your identity's data model fully flexibly. Spice requires email, first name, and last name. Also in the “Settings” tab, you add new fields and customize your identity data models.

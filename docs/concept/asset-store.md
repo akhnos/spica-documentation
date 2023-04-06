@@ -123,7 +123,7 @@ valueFrom:
 
 ## Manually Applying the Asset
 
-Instead of directly applying the asset from asset store, you can also apply the asset manually using `Spica CLI`. If you haven't installed it yet, see the [installation](https://spicaengine.com/docs/start/local-development#installation)part. Below, we show how to apply the bucket asset.
+Instead of directly applying the asset from asset store, you can also apply the asset manually using `Spica CLI`. If you haven't installed it yet, see the [installation](https://spicaengine.com/docs/start/local-development#installation) part. Below, we show how to apply the bucket asset.
 
 Create a new Spica context on your machine using the following command:
 

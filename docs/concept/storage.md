@@ -1,12 +1,16 @@
 # Storage
 
-This module is essentially a file manager on your Spica instance. You can store, list, and delete your files via this module.
+This module is essentially a file manager on your Spica instance. You can store, list, update and delete your files via the directories on this module.
+
+To list all of your directories and their content, simply navigate to the **Storage** section on the side panel.  
+
+In the Storage page, you can create and access your directories, create new folders, and add files to these folders. Spica allows you to sort your files by date or name, copy, replace or delete your files. You can also edit an image file in this page.
 
 ## Online Image Editor
 
-To edit the image typed storage item, click the `three dots` next to the item to open the context menu. Clicking the `edit` button will take you to the Image Editing page.
+To edit the image typed storage item, click the **Edit** button at the bottom of the image display. Clicking this button will take you to the Image Editing page.
 
-On that page, you crop the image, scale by percentage, and rotate the image as you wish. Click on the `tick` icon to save the image after editing.
+On that page, you can crop the image, scale by percentage, and rotate it as you wish. Click on the **save** icon to save the image after editing.
 
 ![Image Editor](/img/docs/storage/image_editor.png)
 
@@ -29,4 +33,6 @@ To integrate your Cloud Storage account, you have to either restart or create a 
   $ spica serve <docker machine name> -- --storage-strategy="gcloud" --gcloud-service-account-path=<where you download the service account file> --gcloud-bucket-name=<GCloud bucket name>
 ```
 
-> IMPORTANT: GCloud bucket should be configured for public access.
+:::caution
+GCloud bucket should be configured for public access.
+:::
